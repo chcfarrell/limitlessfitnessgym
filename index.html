@@ -107,17 +107,32 @@
       <section id="membership-form">
         <h3>Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
-        <form>
-          Full Name
-          Email Address
-          Phone Number
-          Membership Type
-            Select a Membership Option
-            Monthly Membership
-            Annual Membership
-            Family & Group Plans
-          Tell us about your fitness goals:
-          Submit
+        <form action="post" method="https://wp.zybooks.com/form-viewer.php">
+          <label for="name">Full Name</label>
+          <input type="text" name="text" id="text">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone">
+          <label for="membership">Membership Type</label>
+          <fieldset>
+            <legend>Select a Membership Option</legend>
+            <div>
+              <input type="radio" id="monthly" name="membership" value="monthly" checked>
+              <label for="monthly">Monthly Membership</label>
+            </div>
+            <div>
+              <input type="radio" id="annual" name="membership" value="annual">
+              <label for="annual">Annual Membership</label>
+            </div>
+            <div>
+              <input type="radio" id="group-plan" name="membership" value="group-plan">
+              <label for="group-plan">Family & Group Plans</label>
+            </div>
+          </fieldset>
+          <label for="comments" id="comments">Tell us about your fitness goals:</label>
+          <textarea id="comments" name="comments" rows="4"></textarea>
+          <input type="submit" value="Submit">
         </form>
       </section>
     </section>
@@ -154,7 +169,7 @@
         </li>
       </ul>
     </section>
-    
+
     <section>
       <h2>Contact Us</h2>
       <address>
