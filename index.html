@@ -111,14 +111,14 @@
       <section id="membership-form">
         <h3>Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
-        <form action="post" method="https://wp.zybooks.com/form-viewer.php">
+        <form method="post" action="https://wp.zybooks.com/form-viewer.php">
           <label for="name">Full Name</label>
-          <input type="text" name="text" id="text">
+          <input type="text" name="name" id="name">
           <label for="email">Email Address</label>
           <input type="email" name="email" id="email">
           <label for="phone">Phone Number</label>
           <input type="tel" name="phone" id="phone">
-          <label for="membership">Membership Type</label>
+          <p>Membership Type<p>
           <fieldset>
             <legend>Select a Membership Option</legend>
             <div>
@@ -134,7 +134,7 @@
               <label for="group-plan">Family & Group Plans</label>
             </div>
           </fieldset>
-          <label for="comments" id="comments">Tell us about your fitness goals:</label>
+          <label for="comments">Tell us about your fitness goals:</label>
           <textarea id="comments" name="comments" rows="4"></textarea>
           <input type="submit" value="Submit">
         </form>
